@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Data Kimper</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="favicon.ico" rel="icon">
+  </head>
+  <body>
+    
+    <section id="hero" class="hero w-100 h-100 p-5 mx-auto bi-text-left d-flex justify-content-left align-items-center">
+        <main>
+            <h4>Registrasi</h4>
+            <br>
+            <form action="/">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg">
+                    <input type="text" id="username" name="username" placeholder="Username"><br><br>
+                    <input type="text" id="doh" name="doh" placeholder="DOH"><br><br>
+                    <select class="form-select" id="position" name="position"><br><br>
+                      <option selected>Position</option>
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                    </select><br>
+                    <select class="form-select" id="departemen" name="departemen"><br>
+                      <option selected> Departemen </option>
+                      <option value="1"> Pit J </option>
+                      <option value="2"> Bintang</option>
+                      <option value="3"> Hatari </option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="view-regis.html" class="inputbox">SEND</a>
+                  </div>
+                  <div class="col-sm">
+                    <input type="text" id="date" name="date" placeholder="Have Been MCU?"><br><br>
+                    <input type="text" id="exp" name="exp" placeholder="DOB"><br><br>
+                    <select class="form-select" id="glasses" name="glasses"><br><br>
+                      <option selected>Glasses</option>
+                      <option value="1">Yes</option>
+                      <option value="0">No</option>
+                    </select>
+                  </div>
+                  <div class="col-sm">
+                    <label for="images" class="drop-container" id="dropcontainer">
+                      <span class="drop-title">Upload Dokumen MCU</span>
+                        <img src="/img/uploadfile.png" height="50px" width="50px" style="opacity: 50%;">
+                        <input type="file" id="images" accept="image/*" required>
+                    </label>
+                    <br>
+                    <label for="images" class="drop-container" id="dropcontainer">
+                      <span class="drop-title">Upload Foto</span>
+                        <img src="/img/uploadfile.png" height="50px" width="50px" style="opacity: 50%;">
+                        <input type="file" id="images" accept="image/*" required>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent-tertiary fixed-top mynavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/kpc.png" alt="logo" width="100" height="40"></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/kpc.png" alt="logo" width="100"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="main-menu.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">File</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="view-lisensi.html">Lisensi</a></li>
+                  <li><a class="dropdown-item" href="view-training.html">Training</a></li>
+                  <li><a class="dropdown-item" href="view-regis.html">Registrasi</a></li>
+                  <li><a class="dropdown-item" href="tabel-data.html">Data Arsip</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="main-menu.html">Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

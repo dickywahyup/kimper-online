@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Data Kimper</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="favicon.ico" rel="icon">
+  </head>
+  <body>
+    
+    <section id="hero" class="hero w-100 h-100 p-5 mx-auto bi-text-left d-flex justify-content-left align-items-center">
+        <main>
+            <h4>Welcome, User..</h4>
+            <div id="container" style="--tile-background-color: rgba(32, 33, 36, 1.00); --column-count: 3; --row-count: 2;"><div class="tile" draggable="true" title="Masuk"></div>
+            <a href="registrasi.html" class="btn btn-lg mt-5"><i class="fa fa-id-card-clip"></i><br>Registration </a>
+            <a href="lisensi.html" class="btn btn-lg mt-5"><i class="fa fa-id-card"></i><br>Input License </a>
+            <a href="training.html" class="btn btn-lg mt-5"><i class="fa fa-trophy"></i><br>Input Training </a>
+        </main>
+    </section>
+
+    <nav class="hadow-sm p-3 mb-5 bg-white rounded navbar navbar-expand-md bg-transparent-tertiary fixed-top mynavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/kpc.png" alt="logo" width="100" height="40"></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/kpc.png" alt="logo" width="100"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="main-menu.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">File</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="view-lisensi.html">Lisensi</a></li>
+                  <li><a class="dropdown-item" href="view-training.html">Training</a></li>
+                  <li><a class="dropdown-item" href="view-regis.html">Registrasi</a></li>
+                  <li><a class="dropdown-item" href="tabel-data.html">Data Arsip</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="main-menu.html">Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

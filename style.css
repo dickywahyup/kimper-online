@@ -1,0 +1,450 @@
+:root {
+    --black: #474646;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(9, 9, 9, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #0c0c0c;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #060606;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #0a0a0a;
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #050505;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #080808;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #0b0b0b;
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+/* setting button */
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    background: #b96e6e14;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;  
+    place-content: center;
+}
+
+.hero h4 {
+    text-shadow: var(--shadow);
+}
+
+.hero h4 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.1rem;
+    padding-left: 30px;
+}
+
+.hero a {
+    color: var(--black);
+    background-color: rgb(203, 203, 203);
+    box-shadow: var(--shadow);
+    padding: 5px ;
+}
+
+.hero a:hover {
+    background-color: #686868;
+    color: white;
+}
+.hero input[type=text] {
+    border: 2px solid rgba(218, 215, 215, 1);
+    background-color: rgba(218, 215, 215, 0.5) ;
+    border-radius: 8px;
+    padding: .05rem 2.25rem .375rem .75rem;
+}
+
+.hero input[type=date] {
+    border: 2px solid rgba(218, 215, 215, 1);
+    background-color: rgba(218, 215, 215, 0.5) ;
+    border-radius: 8px;
+    padding: .05rem 2.25rem .375rem .75rem;
+    width: inherit;
+}
+
+.row.cert{
+    margin-left: 1px;
+    margin-right: 1px;
+    
+}
+.row.cert label{
+    margin-left: -12px;
+    margin-right: 0px;
+    
+}
+
+.form-select{
+    border: 2px solid rgba(218, 215, 215, 1);
+    background-color: rgba(218, 215, 215, 0.5) ;
+    border-radius: 8px;
+}
+
+button {
+    float: right;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2rem;
+    padding-left: 30px;
+    padding-bottom: 2px;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+  width: 60px;
+    height: 40px;
+    border-radius: 50px;
+    background: #b96e6e14;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+  .form {
+    max-width: 330px;
+    padding: 15px;
+    margin: 120px auto 0;
+  }
+  .form .form-control {
+    font-size: 16px;
+    padding: 10px;
+    height: auto;
+    border-radius: 0;
+    margin: 0;
+  }
+  .form .bootstrap-select {
+    padding: 0;
+    height: auto;
+  }
+  .form .dropdown-toggle {
+    border-radius: 0;
+    padding: 10px;
+    color: red;
+  }
+  .form .form-select {
+    border-radius: 0;
+    background-color: #686868;
+  }
+
+  .navbar { 
+    box-shadow: 0 8px 6px -6px #999;
+
+    
+}
+
+.drop-container {
+  width: 320px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover,
+.drop-container.drag-active {
+  background: #eee;
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title,
+.drop-container.drag-active .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+input[type=file] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.fa {
+  font-size: 3em;
+}
+
+/* Media Query */
+/* Extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .mynavbar .nav-link {
+      font-size: 2rem;
+      text-align: center;
+  }
+}
+
+/* Setting kelas bg untuk mengatur background*/
+.bg { 
+    background: linear-gradient(0deg, rgba(58,49,50,1) 5%, rgba(143,135,138,1) 40%, rgb(44, 10, 234) 100%); 
+    background-position: center;
+    text-align: center;
+}
+
+/* Card ID kiri */
+.cardc {
+  width: 300px;
+  height: 500px;
+  border: solid;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Card ID kanan */
+.cardd {
+  background-image: url("img/colorkit.png");
+  border-width: 1px;
+  border: solid;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Setting card Kecil */
+.card-sm {
+  border: solid;
+  border-width: 1px;
+  margin-top: 25px;
+  width: 115px;
+  height: 40px;
+  background: rgba(218, 215, 215, 0.5); 
+}
+/* Setting card lebih kecil*/
+.card-ssm {
+  border: solid;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+    height: 50%;
+}
+/* Setting tag p card lebih kecil*/
+.card-ssm p{
+  text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+/* Setting tag p card lebih kecil2*/
+.card-ssm2 p {
+  text-align: center;
+    font-size: 10px;
+}
+/* Setting tinggi col-ssm*/
+.col-ssm {
+  height: inherit;
+}
+/* Setting box image circle*/
+.img-bx {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: black;
+  transform: translateY(30px) scale(0.5);
+}
+/* Setting image circle*/
+.img-bx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Setting tata latak content*/
+.content {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+/* Setting tata letak content*/
+.content .detail {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 15px;
+}
+/* Setting tag h2 pada detail dalam content*/
+.content .detail h2 {
+  color: #444;
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+/* Setting tag h2 dan span pada detail dalam content*/
+.content .detail h2 span {
+  font-size: 0.7em;
+  color: #03a9f4;
+  font-weight: bold;
+}
+/* Setting tag h5 pada col row dalam detail dan dalam content*/
+.content .detail .row .col h5{
+  font-weight: bold;
+  margin-top: revert;
+  color: white;
+  font-size:medium;
+}
+
+.content .detail .col-md-2 h5{
+  font-weight: bold;
+  margin-top: revert;
+  color: white;
+  font-size:medium;
+}
